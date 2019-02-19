@@ -1,0 +1,3 @@
+rootProject.name = 'WaterPets'
+
+include ':app'
