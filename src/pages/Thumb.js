@@ -2,16 +2,17 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { Card, CardSection } from '../components';
 
+const tni = require('../../assets/img/5a2fe9ca30cf95.0408553515130894821999.png');
+
 const Thumb = ({ thumb }) => {
-  const { name, thumbnail_image } = thumb;
+  const { name } = thumb;
   const { thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextStyle } = styles;
-  const tni = '../../../assets/img/5a2fe9ca30cf95.0408553515130894821999.png';
 
   return (
     <Card>
       <CardSection>
         <View style={thumbnailContainerStyle}>
-          <Image style={thumbnailStyle} source={require(tni)} />
+          <Image style={thumbnailStyle} source={tni} />
         </View>
         <View style={headerContentStyle}>
           <Text style={headerTextStyle}>{name}</Text>

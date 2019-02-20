@@ -21,7 +21,7 @@ class Menu extends Component {
             <View style={{ flex: 1 }}>
               <Text style={{ color: 'white', fontSize: 25 }}>
                 <Text style={{ fontWeight: 'bold' }}>Monthly: </Text>
-                <Text>{this.waterUsage.month} gallons </Text>
+                <Text>{this.waterUsage.month} gallons</Text>
               </Text>
             </View>
             <View style={{ flex: 1 }}>

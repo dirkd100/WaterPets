@@ -16,7 +16,6 @@ class SignUpForm extends Component {
     check: false,
   };
 
-  // eslint-disable-next-line class-methods-use-this
   onButtonPress() {
     if (
       this.state.password === '' &&
