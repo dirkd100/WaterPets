@@ -11,7 +11,13 @@
       "request": "launch",
       "platform": "android",
       "sourceMaps": true,
-      "outDir": "${workspaceRoot}/.vscode/.react"
+      "outDir": "${workspaceRoot}/.vscode/.react",
+      "skipFiles": [
+        "node_modules/**/*.js",
+        "<node_internals>/**/*.js",
+        "*VM*",
+        ".vscode/.react/debuggerWorker.js"
+      ]
     },
     {
       "name": "Attach to packager",
