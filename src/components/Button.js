@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { Text, TouchableOpacity } from 'react-native';
 
 const Button = ({ onPress, children }) => {
@@ -9,6 +11,15 @@ const Button = ({ onPress, children }) => {
       <Text style={textStyle}>{children}</Text>
     </TouchableOpacity>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.element,
+  onPress: PropTypes.func.isRequired,
+};
+
+Button.defaultProps = {
+  children: '',
 };
 
 const styles = {

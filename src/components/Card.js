@@ -1,7 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
+import PropTypes from 'prop-types';
 
-const Card = props => <View style={styles.containerStyle}>{props.children}</View>;
+const Card = ({ children }) => <View style={styles.containerStyle}>{children}</View>;
+
+Card.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 const styles = {
   containerStyle: {

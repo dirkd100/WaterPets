@@ -1,8 +1,16 @@
-/* eslint-disable import/prefer-default-export */
 import React from 'react';
 import { View } from 'react-native';
+import PropTypes from 'prop-types';
 
-const CardSection = props => <View style={styles.containerStyle}>{props.children}</View>;
+const CardSection = ({ children }) => <View style={styles.containerStyle}>{children}</View>;
+
+CardSection.propTypes = {
+  children: PropTypes.element,
+};
+
+CardSection.defaultProps = {
+  children: '',
+};
 
 const styles = {
   containerStyle: {
