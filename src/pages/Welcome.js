@@ -9,11 +9,11 @@ class Welcome extends Component {
   };
 
   onLoginButtonPress() {
-    Actions.login();
+    Actions.login(this);
   }
 
   onSignupButtonPress() {
-    Actions.signup();
+    Actions.signup(this);
   }
 
   renderSignupButton() {

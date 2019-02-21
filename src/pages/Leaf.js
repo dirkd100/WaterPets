@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image } from 'react-native';
-import { Card, CardSection, Input, Button } from '../components';
+import { Card, CardSection, Input } from '../components';
 
 class Leaf extends Component {
   state = {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import firebase from '@firebase/app';
-import '@firebase/auth';
+import * as firebase from 'firebase';
 import Router from './Router';
 
 class App extends Component {
