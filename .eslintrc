@@ -3,10 +3,14 @@
   "plugins": ["prettier", "react-native"],
   "env": { "react-native/react-native": true },
   "rules": {
-    "prettier/prettier": [2, { "printWidth": 100, "singleQuote": true, "trailingComma": "es5" }],
+    "prettier/prettier": [
+      2,
+      { "printWidth": 100, "singleQuote": true, "trailingComma": "es5" }
+    ],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "linebreak-style": [2, "windows"],
     "no-use-before-define": 0,
+    "import/prefer-default-export": 0,
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
     "react-native/no-inline-styles": 2,
